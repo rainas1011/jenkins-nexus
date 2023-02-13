@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools {
-        maven "MAVEN"
+        maven "apache-maven"
     }
     environment {
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "65.2.124.26:8081"
+        NEXUS_URL = "13.235.133.90:8081"
         NEXUS_REPOSITORY = "maven-central-repo"
         NEXUS_CREDENTIAL_ID = "NEXUS_ID"
     }
